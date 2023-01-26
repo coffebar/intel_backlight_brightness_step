@@ -1,4 +1,4 @@
-# Fix brightness control fn keys on intel-core laptops
+# Fix brightness control step for fn keys
 
 Program automatically operates intel's ACPI backlight on Linux when you change backlight level with special fn buttons.
 It changes step from magic units to 10% of the absolute maximum value.
@@ -22,3 +22,13 @@ go build -ldflags="-s -w" intel_backlight_brightness_step.go
 ## Usage
 
 Run a binary file **intel_backlight_brightness_step** on system startup.
+
+## Install from repo
+
+On Arch Linux install from AUR: 
+
+[intel_backlight_brightness_step](https://aur.archlinux.org/packages/intel_backlight_brightness_step)
+
+## Contibution
+
+Pull Requests are welcome.
